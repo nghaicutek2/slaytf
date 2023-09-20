@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    display: inline-flex;
+    background-color: #fff;
+    justify-content: flex-end;
+    width: 100%;
+    height: 70px;
+    z-index: 99;
+}
+
+#navbar li a {
+    text-decoration: none;
+    line-height: 65px;
+    color: #000;
+    font-size: medium;
+
+}
+
+.header-icon--weddesign {
+    position: absolute;
+    display: block;
+    bottom: 4px;
+    margin: 0 200px;
+}
+
+#navbar li {
+    display: inline-flex;
+    padding-left: 40px;
+
+
+
+}
+
+.header-navbar-list {
+    display: inline-block;
+}
+
+#navbar {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+#navbar .header-navbar--btn {
+    float: right;
+    color: #000;
+    line-height: 70px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-icon {
+    padding: 0 20px;
+}
+
+
+#navbar li a:hover {
+    color: orange;
+    box-shadow: 0 3px orange;
+}
+
+.header-navbar-button {
+    background-color: #fff;
+    padding: 20 20px;
+    width: 120px;
+    height: 40px;
+    line-height: 30px;
+    border: 1px solid orange;
+    border-radius: 12px;
+}
+
+.header-navbar-button a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.container--search {
+    margin-top: 1px;
+    padding-top: 50%;
+    position: relative;
+    background-image: url(/baitapcuoiky/img/Hanoi-Landmark72-01-s.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_search {
+    position: relative;
+    margin: auto;
+
+}
+
+.box {
+    position: absolute;
+    margin: 500px 600px;
+    width: 300px;
+    height: 50px;
+    bottom: 30px;
+}
+
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    position: relative;
+}
+
+.container-1 input#search {
+    width: 700px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+
+.container-1 button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #232833;
+    height: 50px;
+    width: 50px;
+    color: #4f5b66;
+    opacity: 0;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-1:hover button.icon,
+.container-1:active button.icon,
+.container-1:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin: -0px -50px;
+}
+
+.container-1:hover button.icon:hover {
+    background: white;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-1 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-1 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container--slide {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    position: relative;
+    padding: 5px;
+}
+
+img.slide {
+    width: 710px;
+    height: 400px;
+}
+
+img.slide:not(:first-child) {
+    display: none;
+}
+
+.btn-change {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+#next {
+    right: 10px;
+}
+
+#prev {
+    left: 10px;
+}
+
+.container-slide {
+    min-width: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-display-area {
+    top: 100px;
+    overflow: hidden;
+    height: 820px;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.gallery-wrap {
+    width: 1500%;
+    animation: slideShow 16s infinite;
+
+}
+
+.image {
+    float: left;
+    height: 608px;
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, right top, right bottom, form(transparent), to(rgba(255, 255, 255, 0.3)));
+
+}
+
+@keyframes slideShow {
+    20% {
+        margin-left: 20%;
+    }
+
+    30% {
+        margin-left: -81%;
+    }
+
+    40% {
+        margin-left: -81%;
+    }
+
+    50% {
+        margin-left: -181%;
+    }
+
+    60% {
+        margin-left: -181%;
+    }
+
+
+    70% {
+        margin-left: -281%;
+    }
+
+    80% {
+        margin-left: -281%;
+    }
+
+
+    90% {
+        margin-left: -381%;
+    }
+
+
+    100% {
+        margin-left: -381%;
+    }
+}
+
+.footer {
+    height: 455px;
+    background-color: #1d1d1f;
+}
+
+.footer-information {
+    width: 1080px;
+    margin: 0 auto;
+
+}
+
+.footer-information .footer-list a {
+    text-decoration: none;
+    line-height: 20px;
+
+}
+
+.footer-list li {
+    list-style: none;
+
+}
+
+.footer-header--item {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+.footer-list {
+    margin-top: 40px;
+    float: left;
+    padding-left: 32px;
+    width: 257px;
+    line-height: 32px;
+
+}
+
+.footer-item {
+    color: #ccc;
+}
